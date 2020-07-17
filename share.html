@@ -1,0 +1,618 @@
+
+
+<!DOCTYPE html>
+<html dir="ltr" lang="TH">
+<head>
+    <meta charset="utf-8">
+
+    <!-- Language -->
+    <meta name="language" content="Thai">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+
+
+    <!-- Cache-->
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate"/>
+    <meta http-equiv="Expires" content="0"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+
+    <!-- Robot -->
+    <meta name="robots" content="noindex,nofollow">
+
+    <title>เกมส์ ยอดกุ๊ก Organic by Kratingdaeng Spirit</title>
+    <!-- SEO -->
+    <meta name="Keywords" content="เกมส์ ยอดกุ๊ก Organic by Kratingdaeng Spirit">
+    <meta name="description" content="เกมส์ ยอดกุ๊ก Organic by Kratingdaeng Spirit">
+    <!-- Copyright -->
+    <meta name="copyright" content="Copyright (c) Kratingdaeng Spirit"/>
+    <meta name="author" content="Kratingdaeng Spirit"/>
+
+    <!-- Facebook Propertie -->
+    <meta property="og:title" content="เกมส์ ยอดกุ๊ก Organic by Kratingdaeng Spirit">
+    <meta property="og:description" content="เกมส์ ยอดกุ๊ก Organic by Kratingdaeng Spirit">
+    <meta property="og:image" content="images/share.png">
+
+    <!-- Tweet Propertie -->
+    <meta property="tw:description" content="เกมส์ ยอดกุ๊ก Organic by Kratingdaeng Spirit">
+
+    <!-- Google Plus -->
+    <meta itemprop="name" content="เกมส์ ยอดกุ๊ก Organic by Kratingdaeng Spirit">
+    <meta itemprop="description" content="เกมส์ ยอดกุ๊ก Organic by Kratingdaeng Spirit">
+    <meta itemprop="image" content="images/share.png">
+
+
+    <!-- Favicon normal -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="web-css/base.css">
+    <link rel="stylesheet" href="web-css/animate.css">
+    <link rel="stylesheet" href="web-css/prototype.css">
+
+
+
+    <!--[if IE]>
+    <script src="web-js/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+	<!-- wrapper content -->
+	<div class="main-wrapper">
+
+		<!-- light -->
+		<i class="light"></i>
+
+		<!-- control top -->
+		<div class="control-top">
+
+
+			<a class="btn  next" href="#" onclick="click_()">
+				<span class="dsp-n">next</span>
+				<img src="web-images/btn-share-finishshare.png" alt="">
+			</a>
+			<i class="drape"></i>
+
+		</div>
+
+		<!-- main logo -->
+		<i class="main-logo">
+			<img src="web-images/logo.png" alt="">
+		</i>
+
+		<!-- cloud bg -->
+		<div class="cloud-bg">
+			<i class="cloud"></i>
+			<i class="cloud  cloud-right"></i>
+		</div>
+
+		<!-- table -->
+		<div class="table-cooking  table-cooking-finish">
+			<i class="table"></i>
+			<i class="table-cloth"></i>
+		</div>
+
+		<!-- share element -->
+
+		<div class="wrapper-share">
+			<i class="share-photo">
+				xxx
+
+			</i>
+			<i class="share-person"></i>
+			<i class="share-notifications">
+				<p>
+
+					
+				</p>
+				<p>
+
+					
+				</p>
+			</i>
+		</div>
+
+	</div>
+	<!-- Javascript -->
+
+
+<div class="please-rotate-phone">
+	<div class="play-phone">
+		<p>
+			<img src="web-images/icon-phone.png" alt="" >
+			<br><strong>กรุณาเล่นเกมนี้ในมุมมองแนวนอนของโทรศัพท์</strong>
+		</p>
+	</div>
+</div>
+
+<script src="web-js/jquery-1.11.2.min.js"></script>
+<script src="web-js/velocity.min.js"></script>
+<script src="web-js/jquery.bxslider/jquery.bxslider.js"></script>
+
+<script>
+$(document).ready(function () {
+	$(window).load(function () {
+
+
+		/**
+		**
+		=Animate home page
+		**
+		**/
+		if($('#homePage').length){
+			$('.cloud-main').addClass('active');
+			$('.character-wrapper').addClass('active');
+		}
+
+		/**
+		**
+		=Animate Hub page
+		**
+		**/
+		if($('#hubPage').length){
+			setTimeout(function(){
+				$('#shelf').addClass('active');
+			},600);
+			$('.character-wrapper').addClass('active');
+		}
+
+		/**
+		**
+		=Animate Hub page
+		**
+		**/
+		if($('#introduce').length){
+			$('.cloud-main').addClass('active');
+			$('.content-detail').addClass('active');
+			$('.top-label').addClass('active');
+
+		}
+
+		/**
+		**
+		=Animate Play method
+		**
+		**/
+		if($('#playMethod').length){
+			$('.cloud-main').addClass('active');
+			$('.method-board img').addClass('active');
+
+		}
+
+		/**
+		**
+		=Animate donate
+		**
+		**/
+		/*if($('.donate-basket').length){
+			$('.donate-basket').addClass('active');
+		}*/
+
+		/**
+		**
+		=Basket slide
+		**
+		**/
+		var basketMeat = $('#basketMeat').show().bxSlider({
+			infiniteLoop: false,
+			controls: false,
+			pager: false,
+			minSlides: 5,
+			maxSlides: 5,
+			slideWidth: 230,
+			slideMargin: 20
+		});
+
+		var basketVegetable = $('#basketVegetable').show().bxSlider({
+			infiniteLoop: false,
+			controls: false,
+			pager: false,
+			minSlides: 5,
+			maxSlides: 5,
+			slideWidth: 230,
+			slideMargin: 20
+		});
+
+		var basketRice = $('#basketRice').show().bxSlider({
+			infiniteLoop: false,
+			controls: false,
+			pager: false,
+			minSlides: 5,
+			maxSlides: 5,
+			slideWidth: 230,
+			slideMargin: 20
+		});
+
+		var basketEgg = $('#basketEgg').show().bxSlider({
+			infiniteLoop: false,
+			controls: false,
+			pager: false,
+			minSlides: 3,
+			maxSlides: 3,
+			slideWidth: 230,
+			slideMargin: 40
+		});
+
+		$('#basketNext').on('click', function(){
+			basketMeat.goToNextSlide();
+			basketVegetable.goToNextSlide();
+			basketRice.goToNextSlide();
+			basketEgg.goToNextSlide();
+		});
+
+		$('#basketPrev').on('click', function(){
+			basketMeat.goToPrevSlide();
+			basketVegetable.goToPrevSlide();
+			basketRice.goToPrevSlide();
+			basketEgg.goToPrevSlide();
+		});
+
+		/**
+		**
+		=Playing sound
+		**
+		**/
+
+
+
+		var playMusic = new Audio('sound/play-music.mp3');
+		playMusic.volume = 0;
+		playMusic.play();
+
+		var maxIncreaseSound = 0;
+		var increaseSound = setInterval(function(){
+			if(maxIncreaseSound > 9){
+				clearInterval(increaseSound);
+			}else{
+				playMusic.volume += 0.1;
+				maxIncreaseSound += 1;
+			}
+
+		}, 1000);
+
+
+		/*if($('#finishName').length){
+			setTimeout(function(){
+				playMusic.play();
+
+			},3000);
+		}else{
+			playMusic.play();
+		}*/
+
+		var ping = new Audio("sound/Ping-Sound.mp3");//เลือกอาหาร
+
+		$('.layout-basket label').on('click', function(e){
+			e.preventDefault();
+
+			ping.play();
+		});
+
+		/**
+		**
+		=Select Basket
+		**
+		**/
+		$('.layout-basket-slide-meat').css({transform: 'translateX(0)'});
+
+		$('#back').hide();
+
+		/* basket 1 */
+		$('#basketMeat img').on('click', function(event){
+
+			event.preventDefault();
+
+			$('#back').fadeIn();
+
+			var targetDish = $('#dish1');
+			var itemMaterial = $(this).data('material');
+
+			$(this).next().prop('checked',true);
+
+			targetDish.addClass('active').html('<img class="material" src="web-images/meat-dish/'+itemMaterial+'.png">');
+
+			$('.layout-basket-slide-meat').css({transform: 'translateY(200%)'});
+
+			$('.layout-basket-slide-vegetable').css({transform: 'translateX(-5%)'});
+
+			setTimeout(function(){
+				$('.layout-basket-slide-vegetable').css({transform: 'translateX(0)'});
+			},400);
+
+			$('#back').off('click');
+			$('#back').on('click', function(e){
+				e.preventDefault();
+
+				$('#back').fadeOut();
+
+				$('.layout-basket-slide-meat').css({transform: 'translateY(0)'});
+				$('.layout-basket-slide-vegetable').css({transform: 'translateX(150%)'});
+				$('#dish1').removeClass('active').html('');
+				$('#basketMeat').find('input').prop('checked',false);
+			});
+
+
+		});
+
+		/* basket 2 */
+		$('#basketVegetable img').on('click', function(event){
+
+			event.preventDefault();
+
+			var targetDish = $('#dish2');
+			var itemMaterial = $(this).data('material');
+
+			$(this).next().prop('checked',true);
+
+			targetDish.addClass('active').html('<img class="material" src="web-images/vegetable-dish/'+itemMaterial+'.png">');
+
+			$('.layout-basket-slide-vegetable').css({transform: 'translateY(200%)'});
+			$('.layout-basket-slide-rice').css({transform: 'translateX(-5%)'});
+			setTimeout(function(){
+				$('.layout-basket-slide-rice').css({transform: 'translateX(0)'});
+			},400);
+
+
+			$('#back').off('click');
+			$('#back').on('click', function(e){
+				e.preventDefault();
+
+				$('.layout-basket-slide-vegetable').css({transform: 'translateY(0)'});
+				$('.layout-basket-slide-rice').css({transform: 'translateX(150%)'});
+				$('#dish2').removeClass('active').html('');
+				$('#basketVegetable').find('input').prop('checked',false);
+
+				$('#back').off('click');
+				$('#back').on('click', function(e){
+					e.preventDefault();
+					$('#back').fadeOut();
+					$('.layout-basket-slide-meat').css({transform: 'translateY(0)'});
+					$('.layout-basket-slide-vegetable').css({transform: 'translateX(150%)'});
+					$('#dish1').removeClass('active').html('');
+					$('#basketMeat').find('input').prop('checked',false);
+				});
+			});
+		});
+
+		/* basket 3 */
+		$('#basketRice img').on('click', function(event){
+
+			event.preventDefault();
+
+			var targetDish = $('#dish3');
+			var itemMaterial = $(this).data('material');
+
+			$(this).next().prop('checked',true);
+
+			targetDish.addClass('active').html('<img class="material" src="web-images/rice-dish/'+itemMaterial+'.png">');
+
+
+			$('.layout-basket-slide-rice').css({transform: 'translateY(200%)'});
+			$('.layout-basket-slide-egg').css({transform: 'translateX(-5%)'});
+			setTimeout(function(){
+				$('.layout-basket-slide-egg').css({transform: 'translateX(0)'});
+			},400);
+
+			$('#back').off('click');
+			$('#back').on('click', function(e){
+				e.preventDefault();
+
+				$('.layout-basket-slide-rice').css({transform: 'translateY(0)'});
+				$('.layout-basket-slide-egg').css({transform: 'translateX(150%)'});
+				$('#dish3').removeClass('active').html('');
+				$('#basketRice').find('input').prop('checked',false);
+
+				$('#back').off('click');
+				$('#back').on('click', function(e){
+					e.preventDefault();
+
+					$('.layout-basket-slide-vegetable').css({transform: 'translateY(0)'});
+					$('.layout-basket-slide-rice').css({transform: 'translateX(150%)'});
+					$('#dish2').removeClass('active').html('');
+					$('#basketVegetable').find('input').prop('checked',false);
+
+					$('#back').off('click');
+					$('#back').on('click', function(e){
+						e.preventDefault();
+						$('#back').fadeOut();
+						$('.layout-basket-slide-meat').css({transform: 'translateY(0)'});
+						$('.layout-basket-slide-vegetable').css({transform: 'translateX(150%)'});
+						$('#dish1').removeClass('active').html('');
+						$('#basketMeat').find('input').prop('checked',false);
+					});
+				});
+			});
+		});
+
+		/* basket 4 */
+		$('#basketEgg img').on('click', function(event){
+
+			event.preventDefault();
+
+			var targetDish = $('#dish4');
+			var itemMaterial = $(this).data('material');
+
+			$(this).next().prop('checked',true);
+
+			targetDish.addClass('active').html('<img class="material" src="web-images/egg/'+itemMaterial+'.png">');
+
+			$('.layout-basket-slide-egg').css({transform: 'translateY(200%)'});
+			$('.layout-basket-slide-execute').css({transform: 'translateX(-5%)'});
+			setTimeout(function(){
+				$('.layout-basket-slide-execute').css({transform: 'translateX(0)'});
+			},400);
+
+			$('#back').off('click');
+			$('#back').on('click', function(e){
+				e.preventDefault();
+
+				$('.layout-basket-slide-egg').css({transform: 'translateY(0)'});
+				$('.layout-basket-slide-execute').css({transform: 'translateX(150%)'});
+				$('#dish4').removeClass('active').html('');
+				$('#basketEgg').find('input').prop('checked',false);
+
+				$('#back').off('click');
+				$('#back').on('click', function(e){
+					e.preventDefault();
+
+					$('.layout-basket-slide-rice').css({transform: 'translateY(0)'});
+					$('.layout-basket-slide-egg').css({transform: 'translateX(150%)'});
+					$('#dish3').removeClass('active').html('');
+					$('#basketRice').find('input').prop('checked',false);
+
+					$('#back').off('click');
+					$('#back').on('click', function(e){
+						e.preventDefault();
+
+						$('.layout-basket-slide-vegetable').css({transform: 'translateY(0)'});
+						$('.layout-basket-slide-rice').css({transform: 'translateX(150%)'});
+						$('#dish2').removeClass('active').html('');
+						$('#basketVegetable').find('input').prop('checked',false);
+
+						$('#back').off('click');
+						$('#back').on('click', function(e){
+							e.preventDefault();
+
+							$('.layout-basket-slide-meat').css({transform: 'translateY(0)'});
+							$('.layout-basket-slide-vegetable').css({transform: 'translateX(150%)'});
+							$('#dish1').removeClass('active').html('');
+							$('#basketMeat').find('input').prop('checked',false);
+						});
+					});
+				});
+			});
+		});
+
+		/**
+		**
+		=Playing submit
+		**
+		**/
+		var snd = new Audio("sound/cooking.mp3"); // buffers automatically when created
+
+
+		$('#playingSubmit').on('click', function(e){
+			e.preventDefault();
+
+			snd.play();
+
+			$('.wrapper-material').addClass('wrapper-material-cooking');
+
+			$('.table-cooking').addClass('active');
+
+			setTimeout(function(){
+				$('.light').addClass('light-cooking');
+
+			}, 1800);
+
+			setTimeout(function(){
+				$('.layout-basket').submit();
+			}, 3800);
+
+
+		});
+
+		/**
+		**
+		=Cooking
+		**
+		**/
+		if($('#finishName').length){
+			setTimeout(function(){
+				$('.light-cooking-reverse').velocity({opacity: 0}, {complete: function(){ $(this).hide(); }});
+
+			}, 300);
+
+			$('.finish-food').addClass('active');
+		}
+
+		/**
+		**
+		=Benefit
+		**
+		**/
+		$('.basket-outside').on('mouseenter', function(e){
+			e.preventDefault();
+
+			$(this).find('.meat-name').animate({
+				opacity: 1
+			});
+		});
+
+		$('.basket-outside').on('mouseleave', function(e){
+			e.preventDefault();
+
+			$(this).find('.meat-name').animate({
+				opacity: 0
+			});
+		});
+
+		$('.meat-name').on('click', function(e){
+			e.preventDefault();
+
+			var contentTarget = $(this).attr('href');
+			$(contentTarget).show();
+		});
+
+		$('.button-close').on('click', function(e){
+			e.preventDefault();
+
+			$('.benefit-wrapper').hide();
+		});
+
+
+
+
+
+	});
+
+});
+
+</script>
+
+	<script type="text/javascript">
+
+	</script>
+	<script type="text/javascript">
+	 $(function(){
+	  $.ajaxSetup({ cache: true });
+	  $.getScript('//connect.facebook.net/en_US/sdk.js', function(){
+	    FB.init({
+			appId: '1130910396973478',
+			status: true,
+			xfbml : true,
+			cookie: true,
+			version: 'v2.5'
+	    });
+
+	    // Init
+	    //alert("xxx");
+	    //console.log("xxxx");
+	  });
+	});
+
+	 function click_(){
+		console.log('click');
+		FB.ui({
+			method: 'feed',
+			picture: 'http://www.ktd-spirit.com/chief-organic/xxx',
+			link: 'http://www.ktd-spirit.com/chief-organic/home.html',
+			caption: 'food',
+			name: 'อิ่มอร่อยกับ (xxx)',
+			description: 'กลุ่มธุรกิจกระทิงแดง ในฐานะองค์กรของคนไทยตระหนักในคุณค่าของ การ “ให้” คืนกลับสู่สังคม โดยเชื่อมโยงการทำงานเพื่อให้เกิดเครือข่าย ที่เข้มแข็งขับเคลื่อนไปสู่การสร้างความ “ยั่งยืน” จึงได้จัดตั้ง “กระทิงแดง สปิริต” ขึ้นเพื่อสนับสนุนกิจกรรมในทุกๆ ด้านที่เป็นประโยชน์ต่อชุมชน และสังคม พร้อมกับเปิดโอกาสให้ประชาชนทั่วไปเข้าร่วมทำงานอาสาสมัคร ในโครงการที่เราร่วมกับภาคีในพื้นที่ต่าง ๆ ทั่วทุกภาคโดยเฉพาะด้าน ความมั่นคงทางอาหาร ภายใต้โครงการ “เกษตรอินทรีย์ วิถียั่งยืน” ซึ่งเป็น หนึ่งในกิจกรรมของกระทิงแดงสปิริต ที่ส่งเสริมการทำเกษตรอินทรีย์ร่วม กับภาคีเครือข่ายใน 12 จังหวัดทั่วประเทศ'
+		}, function(response){
+			if (response && !response.error_message){
+				$.get("ajax-update-share-shatus.html", function(data){
+						alert("ขอบคุณที่ช่วยบริจาคค่ะ");
+						self.location.href = "./home.html";
+				});
+			}
+		});
+	 }
+
+</script>
+</body>
+</html>

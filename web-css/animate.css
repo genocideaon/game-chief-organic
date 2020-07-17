@@ -1,0 +1,736 @@
+/*------------------------------------------------------------------------*\
+=Home
+\*------------------------------------------------------------------------*/
+/**
+**
+=Cloud main
+**
+**/
+.cloud-main .left-top {
+	transform: translate(-100%, -100%);
+}
+
+
+.cloud-main .right-top {
+	transform: translate(100%, -100%);
+}
+
+
+.cloud-main .left-bottom {
+	transform: translate(-100%, 100%);
+}
+
+.cloud-main .right-bottom {
+	transform: translate(100%, 100%);
+}
+
+.cloud-main .left-top,
+.cloud-main .right-top,
+.cloud-main .left-bottom,
+.cloud-main .right-bottom {
+	transition: transform 0.4s;
+}
+
+
+/* play */
+.cloud-main.active .left-top,
+.cloud-main.active .right-top,
+.cloud-main.active .left-bottom,
+.cloud-main.active .right-bottom {
+	transform: translate(0, 0);
+}
+
+
+/**
+**
+=Character
+**
+**/
+@keyframes character {
+	0% {
+		transform: translate(-55%, 200%) scale(0.9, 1.1);
+	}
+
+	1% {
+		opacity: 1;
+	}
+
+	40% {
+		transform: translate(-55%, -5%) scale(1.05, 0.95);
+	}
+
+	67% {
+		transform: translate(-55%, 5%) scale(0.95, 1.05);
+	}
+
+	84% {
+		transform: translate(-55%, 0) scale(1, 1);
+	}
+
+
+	100% {
+		transform: translate(-55%, 0) scale(1, 1);
+		opacity: 1;
+	}
+}
+
+.character-wrapper-hub,
+.character-wrapper-home {
+	transform: translate(-55%, 200%);
+	opacity: 0;
+}
+
+/* play */
+.character-wrapper.active {
+	animation: character 0.8s linear 0.4s forwards;
+
+}
+
+/**
+**
+=Character Element
+**
+**/
+@keyframes scarecrow {
+	0% {
+		transform: translate(44%, 83%);
+	}
+
+	80% {
+		transform: translate(-10%, -10%);
+	}
+
+	100% {
+		transform: translate(0, 0);
+	}
+}
+
+.character-wrapper-hub .scarecrow,
+.character-wrapper-home .scarecrow {
+	transform: translate(44%, 83%);
+	transition: transform 0.4s;
+}
+
+
+.character-wrapper.active .character .scarecrow {
+	animation: scarecrow 0.2s linear 1.1s forwards;
+}
+
+/* onion */
+@keyframes onion {
+	0% {
+		transform: translate(0, 100%);
+	}
+
+	80% {
+		transform: translate(0, -10%);
+	}
+
+	100% {
+		transform: translate(0, 0);
+	}
+}
+
+.character-wrapper-hub .onion,
+.character-wrapper-home .onion {
+	transform: translate(0, 100%);
+	transition: transform 0.4s;
+}
+
+.character-wrapper.active .character .onion {
+	animation: onion 0.2s linear 1.2s forwards;
+}
+
+/* scarecrow */
+@keyframes chicken {
+	0% {
+		transform: translate(0, 100%);
+	}
+
+	80% {
+		transform: translate(0, -10%);
+	}
+
+	100% {
+		transform: translate(0, 0);
+	}
+}
+
+.character-wrapper-hub .chicken,
+.character-wrapper-home .chicken {
+	transform: translate(0, 100%);
+	transition: transform 0.4s;
+}
+
+.character-wrapper.active .character .chicken {
+	animation: chicken 0.2s linear 1.3s forwards;
+}
+
+/* vegetable */
+@keyframes vegetable {
+	0% {
+		transform: translate(-63%, 58%);
+	}
+
+	80% {
+		transform: translate(10%, -10%);
+	}
+
+	100% {
+		transform: translate(0, 0);
+	}
+}
+
+.character-wrapper-hub .vegetable,
+.character-wrapper-home .vegetable {
+	transform: translate(-63%, 58%);
+	transition: transform 0.4s;
+}
+
+.character-wrapper.active .character .vegetable {
+	animation: vegetable 0.2s linear 1.4s forwards;
+}
+
+
+/*------------------------------------------------------------------------*\
+=Hub
+\*------------------------------------------------------------------------*/
+/**
+**
+=Cloud and Ingredients
+**
+**/
+@keyframes clound-hub {
+	0% {
+		transform: translateX(-200%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes clound-hub-right {
+	0% {
+		transform: translateX(200%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.cloud-hub {
+	transform: translateX(-200%);
+}
+
+.shelf.active .cloud-hub {
+	animation: clound-hub 0.6s linear forwards;
+}
+
+.cloud-hub-right {
+	transform: translateX(200%);
+}
+
+/* shelf */
+.shelf.active .cloud-hub-right {
+	animation: clound-hub-right 0.6s linear forwards;
+}
+
+.shelf-item-1 {
+	transform: translateX(-200%);
+}
+
+.shelf.active .shelf-item-1 {
+	animation: clound-hub 0.6s linear 0.6s forwards;
+}
+
+.shelf-item-2 {
+	transform: translateX(200%);
+}
+
+.shelf.active .shelf-item-2 {
+	animation: clound-hub-right 0.6s linear 0.6s forwards;
+}
+
+/**
+**
+=Shelf button
+**
+**/
+@keyframes hub-button {
+	0% {
+		height: 0
+	}
+
+	25% {
+		height: 70.9271523179%;
+	}
+
+	50% {
+		height: 55.9271523179%;
+	}
+
+	75% {
+		height: 65.9271523179%;
+	}
+
+	100% {
+		height: 60.9271523179%;
+	}
+}
+
+.shelf-btn {
+	height: 0;
+	overflow: hidden;
+}
+
+.shelf.active .shelf-btn {
+	animation: hub-button 0.8s linear 0.6s forwards;
+}
+
+.shelf.active .shelf-btn-2 {
+	animation-delay: 0.9s;
+}
+
+.shelf.active .shelf-btn-3 {
+	animation-delay: 0.7s;
+}
+
+@keyframes scale-out {
+	0% {
+		transform: scale(0);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	75% {
+		transform: scale(0.9);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.start-btn {
+	transform: scale(0);
+}
+
+.shelf.active + .start-btn {
+	animation: scale-out 0.6s linear 1.4s forwards;
+}
+
+
+
+
+/*------------------------------------------------------------------------*\
+=Introduce
+\*------------------------------------------------------------------------*/
+@keyframes content-detail {
+	0% {
+		transform: scale(0);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+.content-detail {
+	transform: scale(0);
+}
+
+.content-detail.active {
+	animation: content-detail 0.8s linear 0.4s forwards;
+}
+
+@keyframes top-label {
+	0% {
+		transform: translate(-50%, -200%);
+	}
+
+	50% {
+		transform: translate(-50%, 5%);
+	}
+
+	100% {
+		transform: translate(-50%, 0);
+	}
+}
+
+.top-label {
+	transform: translate(-50%, -200%);
+}
+
+.top-label.active {
+	animation: top-label 0.8s linear 0.6s forwards;
+}
+
+/*------------------------------------------------------------------------*\
+=Playing
+\*------------------------------------------------------------------------*/
+@keyframes basket {
+	0%, 10%, 100% {
+		transform: translateY(0);
+	}
+	
+	5% {
+		transform: translateY(-10%);
+	}
+
+}
+
+.layout-basket-slide div label {
+	animation: basket 1.5s ease infinite;
+}
+
+.layout-basket-slide div:nth-child(2) label {
+	animation-delay: 0.2s;
+	animation-duration: 2s;
+}
+
+.layout-basket-slide div:nth-child(3) label {
+	animation-delay: 0.4s;
+	animation-duration: 2.9s;
+}
+
+.layout-basket-slide div:nth-child(4) label {
+	animation-delay: 0.3s;
+	animation-duration: 2.8s;
+}
+
+.layout-basket-slide div:nth-child(5) label {
+	animation-delay: 0.5s;
+	animation-duration: 2.9s;
+}
+
+.layout-basket-slide div:nth-child(6) label {
+	animation-delay: 0.7s;
+	animation-duration: 2s;
+}
+
+.layout-basket-slide div:nth-child(7) label {
+	animation-delay: 0.6s;
+	animation-duration: 2.1s;
+}
+
+.layout-basket-slide div:nth-child(8) label {
+	animation-delay: 0.9s;
+	animation-duration: 2.9s;
+}
+
+.layout-basket-slide div:nth-child(9) label {
+	animation-delay: 0.8s;
+	animation-duration: 2.8s;
+}
+
+.layout-basket-slide div:nth-child(10) label {
+	animation-delay: 1s;
+	animation-duration: 2s;
+}
+
+/**
+**
+=Shelf button
+**
+**/
+@keyframes material {
+	0% {
+		transform: translate(-50%, -70%) scale(0);
+	}
+
+	25% {
+		transform: translate(-50%, -70%) scale(1.2);
+	}
+	
+	50% {
+		transform: translate(-50%, -70%) scale(1);
+	}
+
+	65% {
+		transform: translate(-50%, -50%) scale(1);
+	}
+
+	80% {
+		transform: translate(-50%, -55%) scale(1);
+	}
+
+	100% {
+		transform: translate(-50%, -50%) scale(1);
+	}
+
+}
+.dish-group .material {
+	transform: translate(-50%, -70%) scale(0);
+	animation: material 1s ease;
+
+}
+
+.dish-group:after {
+	transform: scale(0);
+}
+
+.dish-group.active:after {
+	animation: scale-out 0.4s ease 1s forwards;
+}
+
+
+
+/*------------------------------------------------------------------------*\
+=Cooking
+\*------------------------------------------------------------------------*/
+.table-cloth {
+	opacity: 1;
+	transition: opacity 0.4s linear;
+} 
+
+.table-cooking.active .table-cloth {
+	opacity: 0;
+}
+
+.layout-basket {
+	opacity: 1;
+	transition: opacity 0.4s linear;
+} 
+
+.wrapper-material-cooking .layout-basket {
+	opacity: 0;
+}
+
+.wrapper-material {
+    transition: padding 0.4s linear 0.4s;
+}
+
+@keyframes stove {
+	0% {
+		transform: translate(-50%, -10%);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(-50%, 0);
+		opacity: 1;
+	}
+}
+.stove {
+	opacity: 0;
+}
+
+.table-cooking.active .stove {
+	animation: stove 0.4s linear 1.4s forwards;
+}
+
+
+/*------------------------------------------------------------------------*\
+=Stove
+\*------------------------------------------------------------------------*/
+@keyframes cooking {
+	0%, 40% , 100% {
+		transform: translateY(0);
+	}
+
+	20% {
+		transform: translateY(-10%);
+	}
+}
+
+@keyframes cooking-2 {
+	0%, 40% , 100% {
+		transform: translateY(0);
+	}
+
+	20% {
+		transform: translateY(-5%);
+	}
+}
+
+.stove-m {
+	animation: cooking 1.5s ease-in-out infinite;
+}
+
+.stove-m-2 {
+	animation-delay: 0.4s;
+	animation-duration: 1.1s;
+}
+
+.stove-v {
+	animation: cooking-2 1.5s ease-in-out 0.2s infinite;
+}
+
+.stove-v-2 {
+	animation: cooking-2 1.1s ease-in-out 0.2s infinite;
+}
+/**
+**
+=Star
+**
+**/
+@keyframes star-1 {
+	0% {
+		transform: rotate(0deg) scale(1);
+	}
+
+	50% {
+		transform: rotate(180deg) scale(0.3);
+	}
+
+	100% {
+		transform: rotate(360deg) scale(1);
+	}
+}
+
+.stove-s-1 {
+	animation: star-1 2s linear infinite;
+}
+
+.stove-s-2 {
+	animation-delay: 0.2s;
+	animation-duration: 1.6s;
+}
+
+@keyframes star-2 {
+	0%, 100% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(0);
+	}
+
+}
+
+.stove-s-2-1 {
+	animation: star-2 0.2s linear infinite;
+}
+
+@keyframes star-3 {
+	0%, 100% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(0.3);
+	}
+
+}
+
+.stove-s-3 {
+	animation: star-3 0.5s linear infinite;
+}
+
+.stove-s-3-2 {
+	animation-delay: 0.1s;
+}
+
+.stove-s-3-3 {
+	animation-delay: 0.3s;
+}
+
+.stove-s-3-4 {
+	animation-delay: 0.2s;
+}
+
+.stove-s-3-5 {
+	animation-delay: 0.4s;
+}
+
+
+@keyframes light {
+	0% {
+		transform: translate(-50%, -50%) rotate(0);
+		background-color: transparent;
+	}
+
+	50% {
+		transform: translate(-50%, -50%) rotate(180deg);
+		background-color: transparent;
+	}
+
+	100% {
+		transform: translate(-50%, -50%) rotate(360deg);
+		
+	}
+}
+
+.light-cooking {
+	animation: light 2s linear forwards infinite;
+	z-index: 9999;
+	width: 0;
+	padding: 100%;
+	height: 0;
+	top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@keyframes light-reverse {
+	0% {
+		transform: translate(-50%, -50%) rotate(0);
+		background-color: transparent;
+	}
+
+	50% {
+		transform: translate(-50%, -50%) rotate(180deg);
+		background-color: #fff;
+	}
+
+	100% {
+		transform: translate(-50%, -50%) rotate(360deg);
+		background-color: #fff;
+	}
+}
+.light-cooking-reverse {
+	animation: light-reverse reverse 2s linear forwards;
+	z-index: 9999;
+	width: 0;
+	padding: 100%;
+	height: 0;
+	top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+
+/*------------------------------------------------------------------------*\
+=finish
+\*------------------------------------------------------------------------*/
+@keyframes food-success {
+	0%, 100% {
+		transform: translate(-50%, -20%) scale(0);
+	}
+
+	20% {
+		transform: translate(-50%, -20%)  scale(1.1);
+	}
+
+	40% {
+		transform: translate(-50%, 0%) scale(1);
+	}
+
+	60% {
+		transform: translate(-50%, -10%) scale(1);
+	}
+
+	80% {
+		transform: translate(-50%, 0%) scale(1);
+	}
+
+	100% {
+		transform: translate(-50%, 0%) scale(1);
+	}
+}
+
+.finish-food.finish-food-success {
+	transform: translate(-50%, -20%) scale(0);
+}
+
+.finish-food.active {
+	animation: food-success 1.5s ease forwards;
+}

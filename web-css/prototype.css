@@ -1,0 +1,499 @@
+.wrapper-material {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0 0 29.8765432099%;
+}  
+
+.wrapper-material-cooking {
+	padding: 0 0 13.8765432099%;
+}
+
+/* basket */
+.layout-basket {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 22.3140495868%;
+    z-index: 4;
+	padding: 0 8.14814814815%;
+    text-align: center;
+	height: 28.9256198347%;
+}
+
+.layout-basket-slide {
+	position: absolute;
+    bottom: 0;
+    left: 8.14814814815%;
+    right: 8.14814814815%;
+    padding: 0 0 14%;
+    height: 0;
+	transform: translateX(150%);
+	transition: transform 0.4s ease;
+}
+
+.layout-basket-slide-rice {
+	padding: 0 0 14%;
+}
+
+.layout-basket-slide-execute {
+	padding: 0 0 10%;
+}
+
+.layout-basket-slide-execute button {
+	border: 0;
+	background: none;
+	width: 39.7530864198%;
+	outline: 0;
+	cursor: pointer;
+}
+
+.layout-basket-slide-execute img {
+	width: 100%;
+}
+
+
+.layout-basket img {
+	vertical-align: bottom;
+	width: 100%;
+}
+
+
+.layout-basket label {
+	display: block;
+	cursor: pointer;
+	padding: 10% 0 0;
+}
+
+.layout-basket input {
+	display: none;
+}
+
+@media (max-width: 991px){
+	
+	.layout-basket-slide {
+		padding: 0 0 15%;
+	}
+}
+
+/* control basket */
+.control-basket {
+	background: url(../web-images/control-next.png) no-repeat center / 100%;
+	position: absolute;
+	z-index: 4;
+	bottom: 30.5785123967%;
+	right: 2.0987654321%;
+	width: 2.96296296296%;
+	height: 16.942148760%;
+}
+
+.control-basket-prev {
+	background-image: url(../web-images/control-previous.png);
+	right: auto;
+	left: 2.0987654321%;
+}
+
+
+/* layout dish */
+.layout-dish {
+    position: absolute;
+    bottom: 72.3140495868%;
+	height: 38.4297520661%;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.layout-dish > div {
+    width: 25%;
+    float: left;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.smoke {
+	background: url(../web-images/smoke.png) no-repeat center / 100% 100%;
+	width: 100%;
+	height: 175.268817204%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* dish material */
+.dish-group {
+    position: relative;
+	width: 80.6930693069%;
+	margin: auto;
+	padding: 0 0 46.0396039604%;
+}
+
+.dish-group:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../web-images/dish.png) no-repeat center / 100%;
+}
+
+.dish-group .dish {
+    position: absolute;
+    top: 0;
+    left: -15px;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.dish-group .material {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+	width: 100%;
+	transform: translate(-50%, -50%);
+}
+
+.dish-group:after {
+    content: '';
+    position: absolute;
+    width: 32.5153374233%;
+    height: 43.0107526882%;
+    bottom: 11.8279569892%;
+    right: 1.22699386503%;
+    background: url(../web-images/check.png) no-repeat center / 100%;
+}
+
+.layout-dish-cooking {
+    position: absolute;
+    bottom: 34%;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+/*page finish*/
+.finish-food {
+    bottom: 54.3305785124%;
+    padding: 0 0 27.9012345679%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 43.9135802469%;
+    background: url(../images/upload/.png) no-repeat center / 100%;
+}
+
+.layout-name {
+	position: absolute;
+    width: 39.7777777778%;
+	bottom: 8.18181818182%;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 0 0 5.641975%;
+	z-index: 4;
+	background: rgba(255, 255, 255, 0.8);
+	border-radius: 8px;
+}
+
+.layout-name p {
+	position: absolute;
+    top: 11.285714%;
+    left: 3.20512820513%;
+    width: 32.0512820513%;
+    color: #263693;
+    text-align: center;
+	font: bold 35px/0.8 'db_helvethaica_x55_regular';
+    font-size: 2.35vw;
+    margin: 0;
+}
+
+.layout-name input {
+    border-radius: 8px;
+    border: none;
+    position: absolute;
+    left: 36.5384615385%;
+    z-index: 0;
+	box-sizing: border-box;
+	padding: 0 15px;
+    height: 65.7142857143%;
+    width: 61.3247863248%;
+	top: 15.7142857143%;
+    color: #263693;
+    font: bold 35px/1 'db_helvethaica_x55_regular';
+    font-size: 4vw;
+}
+
+@media (max-width: 736px) and (orientation: landscape), (min-width: 1025px) and (orientation: landscape) {
+    /*page home*/
+    .character-wrapper {
+        width: 36.790123%;
+    }
+
+    /*page cooking*/
+	.control-basket a {
+		bottom: 10.578512%;
+	}
+	.control-top .label {
+		width: 25.814815%;
+	}
+
+	.layout-basket {
+		bottom: 0.181818%;
+	}
+	
+	.layout-dish {
+		bottom: 43.818182%;
+	}
+
+	.dish-group {
+		width: 70.693069%;
+	}
+
+    .character-wrapper-playing {
+        width: 16.074074%;
+    }
+
+    .table-cooking {
+        padding: 0 0 20.876543%;
+    }
+
+    .cloud-bg .cloud {
+        bottom: 60.272727%;
+    }
+
+    .stove {
+        bottom: 37.330579%;
+        width: 49.91358%;
+    }
+
+    .donate-basket {
+        width: 31.703704%;
+        padding: 0px 0 26.074074%;
+    }
+
+    .donate-amout {
+        font-size: 3vw;
+    }
+    .character-wrapper-hub {
+        width: 25.185185%;
+    }
+    .shelf .shelf-item-1 {
+        width: 22.814815%;
+    }
+    .shelf .shelf-item-2 {
+        width: 25.765432%;
+    }
+    /*page playing*/
+    .table-cooking {
+        padding: 0 0 18.876543%;
+    }
+    .table-cooking .accessories {
+        padding: 0 0 13.444444%;
+        bottom: 73.479339%;
+        width: 25.17284%;
+    }
+    /*page share*/
+	.wrapper-share {
+		padding: 0 0 49.901235%;
+	}
+
+    .share .person {
+        top: 39.090909%;
+        width: 32.469136%;
+        padding: 0px 0 28.148148%;
+        left:  2.481481%;
+    }
+    .share .photo {
+        width: 52.864198%;
+    }
+
+	/* page donate */
+	.donate {
+		bottom: 10.454545%;
+	}
+
+	/* page finish */
+	.finish-food {
+		bottom: 32.330579%;
+		width: 27.91358%;
+		padding: 0 0 19.901235%;
+	}
+
+	.layout-name {
+		bottom: 2.181818%;
+	}
+
+	/* page introduce */
+	.top-label {
+		width: 30.851852%;
+		padding: 0 0 10.802469%;
+	}
+
+	/* page share */
+	.share-photo {
+		width: 41.864198%;
+		top: 13.72727272727%;
+	}
+
+	.share-person {
+		top: 47.090909%;
+		width: 26.469136%;
+	}
+
+	.share-notifications {
+		top: 81.636364%;
+		width: 13.283951%;
+	}
+
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+	/* page */
+	.main-logo {
+		top: 0.181818%;
+		right: 0.469136%;
+	}
+	
+	/* finish food */
+	.finish-food {
+		padding: 0 0 26.901235%;
+	}
+
+	.layout-name input {
+		font-size: 20px;
+
+		font-size: 4vw;
+	}
+
+	/* introduce */
+	.content-detail {
+		font-size: 18px;
+	}
+}
+
+/*------------------------------------------------------------------------*\
+=Play phone
+\*------------------------------------------------------------------------*/
+.please-rotate-phone {
+	background: #fff;
+	background: rgba(255, 255, 255, 0.8);
+	color: #333;
+	font-size: 28px;
+
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom:  0;
+
+	display: none;
+}
+
+.play-phone {
+	text-align: center;
+}
+.play-phone p {
+	position: absolute;
+	width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.play-phone img {
+	max-width: 100%;
+}
+    
+@media only screen and (orientation: portrait) { 
+	.please-rotate-phone {
+		display: block;
+	}
+}
+.meat-name{
+	background-color: #fff;
+	border-style: solid;
+	font-size: 1.5vw;
+    border-width: 2px;
+    border-color: #660000;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    width: 50%;
+    margin: auto;
+	opacity: 0;
+}
+
+@media (max-width: 991px){
+	.meat-name {
+		opacity: 1 !important;
+	}
+}
+
+
+.label-benefit img {
+	width: 30%;
+	margin-top:-9%;
+}
+
+.benefit-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+}
+
+#benefit-page {
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.7);
+
+}
+
+#benefit-page .content {
+	background: #fff;
+    border-radius: 15px;
+    padding: 12px 30px;
+    font-size: 25px;
+    text-align: left;
+    position: absolute;
+    top: 24%;
+	overflow: scroll;
+    left: 6%;
+	height: 47%;
+    right: 6%;
+	
+}
+.button-close {
+	text-align: center;
+	position: absolute;
+	bottom: 4%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@media (max-width: 991px){
+	#benefit-page .content h3 {
+		font-size: 18px;
+	}
+
+	#benefit-page .content {
+		font-size: 18px;
+	}
+
+	.button-close {
+		width: 100px;
+	}
+
+	.button-close img {
+		width: 100%;
+	}
+}

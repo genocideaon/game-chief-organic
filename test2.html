@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Fade in audio</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  </head>
+  
+  <body>
+    <audio id="audio1" src="sound/play-music.mp3" autoplay="autoplay" LOOP="True"></audio>
+    
+    <script>
+      $(document).ready(function(){
+        $("#audio1")[0].volume = 0;
+        $("#audio1").animate({volume: 1}, 5000);
+      });
+    </script>
+  </body>
+</html>

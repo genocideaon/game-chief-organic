@@ -1,0 +1,1027 @@
+@import url('font/stylesheet.css');
+
+/*
+<------- font ------->
+=db_helvethaica_x55_regular
+*/
+
+/*------------------------------------------------------------------------*\
+=Reset
+\*------------------------------------------------------------------------*/
+
+html {
+    color: #000;
+    font: 100%/1.25 'db_helvethaica_x55_regular', 'Tahoma', 'Arial', 'Helvetica', 'sans-serif';
+
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+
+}
+
+body {
+    margin: 0;
+	background-color: #a7dfde;
+    background-image: linear-gradient(to bottom, #8dc4bf 3px, #8dc4bf 3px,#a2d0d0 3px,#a2d0d0 6px, #a7dfde 1px);
+	background-position: center top;
+	background-size: auto 26px;
+}
+
+html,
+body,
+button {
+    -webkit-font-smoothing: antialiased;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+a {
+    background: transparent;
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+::selection {
+    background: #000;
+    color: #fff;
+    text-shadow: none;
+}
+
+/* Place Holder CSS */
+
+::-webkit-input-placeholder {
+    color: #9f9f9f;
+    font: italic normal 16px/1.5 'Tahoma';
+}
+
+::-moz-placeholder {
+    color: #9f9f9f;
+    font: italic normal 20px/1.5 'Tahoma';
+}
+
+:-ms-input-placeholder {
+    color: #9f9f9f;
+    font: italic normal 20px/1.5 'Tahoma';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'kwamsookbold', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    line-height: 1.1;
+    margin: 0 0 15px;
+    text-transform: none;
+}
+
+p {
+    margin: 0 0 30px;
+    
+}
+
+.clear:before,
+.clear:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+
+/* hide text */
+
+.hd-t {
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+
+/* overflow hidden */
+.ovf-h {
+    overflow: hidden;
+}
+
+/* hide element */
+.dsp-n {
+    display: none;
+}
+
+/** Main content **/
+.maximum-content {
+	width: 100%;
+	position: relative;
+	padding: 
+}
+
+.main-wrapper {
+    position: fixed;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+/* light */
+.light {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../web-images/background-light.png) no-repeat top center / cover;
+}
+
+/* fog bg */
+.fog {
+	background: url(../web-images/fog-bg.png) no-repeat center / cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/**
+**
+=Button
+**
+**/
+.game-btn-group {
+	text-align: center;
+}
+
+.game-btn {
+	display: inline-block;
+	width: 21.4814814815%;
+	min-width: 130px;
+	padding: 0 0 6.04938271605%;
+	height: 0;
+	position: relative;
+}
+
+.game-btn img {
+	height: 100%;
+	width: auto;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/**
+**
+=Order z axis
+**
+**/
+.frontmost {
+	z-index: 9;
+}
+
+
+
+/*------------------------------------------------------------------------*\
+=Home
+\*------------------------------------------------------------------------*/
+
+/**
+**
+=Cloud main
+**
+**/
+.cloud-main {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+
+}
+
+.cloud-main i {
+	background: url(../web-images/cloud-main-top-left.png) no-repeat left top / 100%;
+	position: absolute;
+	width: 33%;
+	height: 0;
+	padding: 0 0 21.5%;
+}
+
+.cloud-main .left-top {
+	background-image: url(../web-images/cloud-main-top-left.png);
+	position: absolute;
+	width: 33%;
+	height: 0;
+	padding: 0 0 21.5%;
+	top: 0;
+	left: 0;
+}
+
+.cloud-main .right-top {
+	background-image: url(../web-images/cloud-main-top-right.png);
+	background-position: right top;
+	top: 0;
+	left: auto;
+	right: 0;
+}
+
+.cloud-main .left-bottom {
+	background-image: url(../web-images/cloud-main-bot-left.png);
+	background-position: left bottom;
+	top: auto;
+	bottom: 0;
+	left: 0;
+	right: auto;
+}
+
+.cloud-main .right-bottom {
+	background-image: url(../web-images/cloud-main-bot-right.png);
+	background-position: right bottom;
+	top: auto;
+	bottom: 0;
+	left: auto;
+	right: 0;
+}
+
+/**
+**
+=Character
+**
+**/
+.character-wrapper {
+	width: 66.7901234568%;
+	height: 57.9012345679%;
+	/* max-width: 48%; */
+	position: absolute;
+	z-index: 9;
+	top: 2.13219616205%;
+	left: 50%;
+	transform: translateX(-55%);
+}
+
+.character {
+	/* background: url(../web-images/character.png) no-repeat center / 100%; */
+	width: 100%;
+	height: 0;
+	padding: 0 0 86.6913123845%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.character i {
+	background: url(../web-images/character-wood.png) no-repeat center / 100%;
+	position: absolute;
+}
+
+.character .scarecrow {
+	background-image: url(../web-images/character-scarecrow.png);
+	
+	width: 15.3419593346%;
+	height: 19.829424307%;
+	top: 51.3859275053%;
+	left: 0;
+}
+
+.character .chicken {
+	background-image: url(../web-images/character-chicken.png);
+	width: 18.2994454713%;
+	height: 22.1748400853%;
+	top: 41.5778251599%;
+	left: 15.7116451017%;
+}
+
+.character .onion {
+	background-image: url(../web-images/character-onion.png);
+	width: 17.1903881701%;
+	height: 21.3219616205%;
+	top: 44.1364605544%;
+	left: 7.20887245841%;
+}
+
+/* .character .chief {
+	background-image: url(../web-images/character-chief.png);
+	width: 347px;
+	height: 302px;
+	top: 0px;
+    left: 113px;
+} */
+
+.character .vegetable {
+	background-image: url(../web-images/character-vegetable.png);
+	width: 17.3752310536%;
+	height: 24.9466950959%;
+	top: 43.710021322%;
+	left: 82.2550831793%;
+}
+
+.character .wood {
+	background-image: url(../web-images/character-wood.png);
+	width: 93.1608133087%;
+	height: 86.3539445629%;
+	top: 0;
+	left: 6.83918669131%;
+}
+
+.character .logo {
+	background-image: url(../web-images/character-logo.png);
+	width: 60.4436229205%;
+	height: 22.6012793177%;
+	top: 77.3987206823%;
+	left: 24.3992606285%;
+}
+
+/**
+**
+=Button
+**
+**/
+.home-btn {
+	position: absolute;
+	bottom: 2.09090909091%;
+	left: 0;
+	right: 0;
+}
+
+
+/*------------------------------------------------------------------------*\
+=Hub
+\*------------------------------------------------------------------------*/
+.character-wrapper-hub {
+	width: 45.1851851852%;
+}
+
+
+/**
+**
+=Shelf
+**
+**/
+.shelf {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0 0 31.3580246914%;
+}
+
+.shelf i,
+.shelf a {
+	position: absolute;
+}
+
+.shelf img {
+	width: 100%;
+}
+
+/**
+**
+=Wood
+**
+**/
+.shelf .shelf-wood {
+	background: url(../web-images/shelf.png) no-repeat center / 100%;
+	bottom: 72.0472440945%;
+	left: 0;
+	width: 100%;
+	padding: 0 0 8.51851851852%;
+}
+
+.shelf .shelf-bot {
+	bottom: 0;
+	padding: 0 0 7.77777777778%;
+}
+
+/**
+**
+=Ingredients
+**
+**/
+.shelf .shelf-item-1 {
+	width: 14.8148148148%;
+	bottom: 87.4015748031%;
+	left: 1.85185185185%;
+}
+
+.shelf .shelf-item-2 {
+	width: 18.7654320988%;
+	bottom: 84.2519685039%;
+	left: auto;
+	right: 1.85185185185%;
+}
+
+/**
+**
+=Button
+**
+**/
+.shelf-btn {
+	width: 31.1111111111%;
+	height: 60.9271523179%;
+	top: 9.05511811024%;
+	left: 3.08641975309%;
+}
+
+.shelf-btn-2 {
+	left: 35.1851851852%;
+}
+
+.shelf-btn-3 {
+	left: 67.037037037%;
+}
+
+.shelf-btn img {
+	position: absolute;
+	bottom: 0;
+}
+
+/**
+**
+=Button
+**
+**/
+.start-btn {
+	position: absolute;
+	bottom: 2.09090909091%;
+	left: 0;
+	right: 0;
+}
+
+@media (max-width: 736px), (min-width: 1025px) and (orientation: landscape) {
+	.start-btn {
+		bottom: 0;
+	}
+}
+
+.back-btn {
+	position: absolute;
+	bottom: 2.09090909091%;
+	left: 0;
+	right: 0;
+
+	text-align: center;
+}
+
+.back-btn a {
+	margin: 0 1.85185185185%;	
+	width: 19.012345679%;
+	display: inline-block;
+}
+
+.back-btn img {
+	width: 100%;
+}
+
+
+/*------------------------------------------------------------------------*\
+=Donate
+\*------------------------------------------------------------------------*/
+.main-logo {
+	position: absolute;
+	top: 2.18181818182%;
+	right: 2.46913580247%;
+	width: 15.6666666667%;
+	z-index: 3;
+}
+
+.main-logo img {
+	width: 100%;
+}
+
+
+/**
+**
+=Label
+**
+**/
+.top-label {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 51.8518518519%;
+	padding: 0 0 15.8024691358%;
+}
+
+.top-label img {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+/* method playing */
+.method-board img {
+	height:  84.636364%;
+	max-width: 95%;
+    position: absolute;
+	left: 50%;
+	top: 0;
+    transform: translateX(-50%);
+}
+
+
+
+
+/**
+**
+=Wood
+**
+**/
+.donate {
+	position: absolute;
+	bottom: 11.4545454545%;
+	left: 0;
+	right: 0;
+	padding: 0 0 37.9012345679%;
+}
+
+.donate i {
+	position: absolute;
+}
+
+.donate-wood {
+	background: url(../web-images/shelf.png) no-repeat center / 100%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0 0 8.51851851852%;
+}
+
+/**
+**
+=Basket
+**
+**/
+.donate-basket {
+	background: url(../web-images/donate-basket.png) no-repeat center / 100%;
+	bottom: 10.4234527687%;
+	left: 50%;
+	width: 53.7037037037%;
+	/* max-width: 48%; */
+	transform: translateX(-50%);
+	padding: 0 0 34.0740740741%;
+}
+
+.donate-basket img {
+	width: 82.0689655172%;
+	position: absolute;
+	bottom: 67.6666666667%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.donate-amout {
+	height: 35.8695652174%;
+	position: absolute;
+	bottom: 10.8695652174%;
+	left: 50%;
+	transform: translateX(-50%);
+	
+	font: normal bold 50px/2.4 'Tahoma';
+	font-size: 5vw;
+	color: #f00;
+	margin: 0;
+}
+
+
+
+
+
+/*------------------------------------------------------------------------*\
+=Introduce
+\*------------------------------------------------------------------------*/
+.content-detail {
+	background: #fff;
+	background: rgba(255, 255, 255, 0.7);
+	border-radius: 15px;
+	padding: 20px;
+	color: #293A98;
+	font-size: 28px;
+	position: absolute;
+	top: 27.2727272727%;
+	left: 10.4938271605%;
+	right: 10.4938271605%;
+	bottom:  18.636364%;
+	text-align: justify;
+}
+
+.content-detail > div {
+	overflow: auto;
+	height: 100%;
+}
+
+
+
+/*------------------------------------------------------------------------*\
+=Playing
+\*------------------------------------------------------------------------*/
+.character-wrapper-playing {
+	width: 24.0740740741%;
+	top: 0.90909090909%;
+}
+
+.character-wrapper-playing .logo {
+	opacity: 0;
+}
+
+.control-top {
+	position: absolute; 
+	z-index: 3;
+	top: 0; 
+	left: 0; 
+	right: 0;
+	height: 37.4545454545%;
+}
+
+.control-top a,
+.control-top i {
+	position: absolute;
+}
+
+.control-top img {
+	width: 100%;
+}
+
+/**
+**
+=Drape
+**
+**/
+.control-top .drape {
+	padding: 0 0 12.0987654321%;
+	background: url(../web-images/drape.png) no-repeat center bottom / 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+/**
+**
+=Button
+**
+**/
+.control-top .btn {
+	right: 2.71604938272%;
+	top: 0;
+	width: 12.950617284%;
+}
+
+.control-top .back {
+	right: auto;
+	left: 2.71604938272%;
+}
+
+
+
+/**
+**
+=Label
+**
+**/
+.control-top .label {
+	left: 50%;
+	top: 15.4174757282%;
+	width: 34.8148148148%;
+	transform: translateX(-50%);
+}
+
+
+
+
+
+/*------------------------------------------------------------------------*\
+=Table cooking
+\*------------------------------------------------------------------------*/
+.table-cooking {
+	padding: 0 0 29.8765432099%;
+	position: absolute;
+	z-index: 3;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.table-cooking i {
+	position: absolute;
+}
+
+/**
+**
+=Accessories
+**
+**/
+.table-cooking .accessories {
+	padding: 0 0 14.4444444444%;
+	background: url(../web-images/kitchenware.png) no-repeat center bottom / 100%;
+	bottom: 102.479338843%;
+	left: 50%;
+	width: 26.1728395062%;
+	transform: translateX(-50%);
+}
+
+/**
+**
+=Table
+**
+**/
+.table-cooking .table {	
+	background: url(../web-images/table.png) no-repeat center top / 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.table-cloth {
+	background: url(../web-images/table-cloth.png) no-repeat center bottom / 100% 100%;
+	height: 89.2561983471%;
+	top: 0;
+	left: 0;
+	right: 0;
+} 
+
+/**
+**
+=Stove
+**
+**/
+.stove {
+	bottom: 60.3305785124%;
+	padding: 0 0 27.9012345679%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 56.9135802469%;
+	background: url(../web-images/gas-stove-mix.png) no-repeat center / 100%;
+}
+
+/**
+**
+=Stove material
+**
+**/
+.stove-material {
+	width: 45%;
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.stove-m {
+	background: url(../web-images/cooking-meat.png) no-repeat center / 100%;
+	width: 32.3671497585%;
+	padding: 0 0 26.0869565217%;
+	left: 10.6280193237%;
+	top: 10.6194690265%;
+}
+
+.stove-m-2 {
+	top: 29.203539823%;
+	left: 57.0796460177%;
+}
+
+.stove-v {
+	background: url(../web-images/cooking-vet.png) no-repeat center / 100%;
+	width: 72.9468599034%;
+	padding: 0 0 55.5555555556%;
+	top: 8.84955752212%;
+	left: 0;
+}
+
+.stove-v-2 {
+	background: url(../web-images/cooking-vet-2.png) no-repeat center / 100%;
+	width: 59.9033816425%;
+	padding: 0 0 48.7922705314%;
+	top: 8.84955752212%;
+	left: 18.3574879227%;
+}
+
+.stove-s-1 {
+	background: url(../web-images/cooking-star-1.png) no-repeat center / 100%;
+	width: 61.8357487923%;
+	padding: 0 0 62.8019323671%;
+	top: -2.65486725664%;
+    left: 58.4541062802%;
+}
+
+.stove-s-1-2 {
+	top: 8.84955752212%;
+	left: -24.6376811594%;
+}
+
+.stove-s-2 {
+	background: url(../web-images/cooking-star-2.png) no-repeat center / 100%;
+	width: 43.961352657%;
+	padding: 0 0 37.1980676329%;
+	top: 6.63716814159%;
+    left: 31.4009661836%;
+}
+
+.stove-s-2-1 {
+	background: url(../web-images/cooking-star-2-1.png) no-repeat center / 100%;
+	width: 21.2560386473%;
+	padding: 0 0 21.7391304348%;
+	top: 7.0796460177%;
+    left: 8.21256038647%;
+}
+
+.stove-s-2-2 {
+	top: 3.53982300885%;
+	left: 20.7729468599%;
+}
+
+.stove-s-3 {
+	background: url(../web-images/cooking-star-3.png) no-repeat center / 100%;
+	width: 11.5942028986%;
+	padding: 0 0 11.1111111111%;
+	top: 0;
+    left: 80.0884955752%;
+}
+
+.stove-s-3-2 {
+	top: 3.38164251208%;
+	left: 72.1238938053%;
+}
+
+.stove-s-3-3 {
+	top: 10.6280193237%;
+	left: 14.6017699115%;
+}
+
+.stove-s-3-4 {
+	top: 36.7149758454%;
+	left: 34.9557522124%;
+}
+
+.stove-s-3-5 {
+	top: 42.0289855072%;
+	left: 42.0353982301%;
+}
+
+
+
+
+/*------------------------------------------------------------------------*\
+=Cloud Bg
+\*------------------------------------------------------------------------*/
+.cloud-bg {
+	padding: 0 0 29.8765432099%;
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.cloud-bg i {
+	position: absolute;
+}
+
+/**
+**
+=Cloud
+**
+**/
+.cloud-bg .cloud {
+	padding: 0 0 33.3333333333%;
+	background: url(../web-images/cloud-playing-left.png) no-repeat center bottom / 100%;
+	bottom: 77.2727272727%;
+	left: 0;
+	width: 30.2469135802%;
+}
+
+.cloud-bg .cloud-right {
+	background-image: url(../web-images/cloud-playing-right.png);
+	left: auto;
+	right: 0;
+}
+
+/**
+**
+=Cloud
+**
+**/
+.cloud-hub {
+	background: url(../web-images/cloud-left.png) no-repeat left bottom / 100%;
+	width: 33.2098765432%;
+	padding: 0 0 22.962962963%;
+	position: absolute;
+	left: 0;
+	bottom: 90%;
+}
+
+.cloud-hub-right {
+	background-image: url(../web-images/cloud-right.png);
+	left: auto;
+	right: 0;
+}
+
+/*------------------------------------------------------------------------*\
+=Finish
+\*------------------------------------------------------------------------*/
+.table-cooking-finish .table-cloth {
+	opacity: 0;
+}
+
+
+
+/*------------------------------------------------------------------------*\
+=Share
+\*------------------------------------------------------------------------*/
+.wrapper-share {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 0 0 67.9012345679%;
+}
+
+.share-photo img {
+	width: 100%;
+}
+
+.share-person,
+.share-photo,
+.share-notifications {
+	position: absolute;
+	z-index: 9;
+}
+
+.share-photo {
+	top: 3.72727272727%;
+	width: 60.8641975309%;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.share-person {
+	top: 49.0909090909%;
+	width: 32.4691358025%;
+	padding: 0 0 28.1481481481%;
+	background: url(../web-images/chief-finishshare.png) no-repeat center / 100%;
+	left: 1.48148148148%;
+}
+
+.share-notifications {
+	background: url(../web-images/share-notifications.png) no-repeat center bottom / 100%;
+	width: 17.2839506173%;
+	padding: 0 0 8.27160493827%;
+	height: 0;
+	top: 59.6363636364%;
+	right: 0.90909090909%;
+	color: #fff;
+	font: normal bold 20px/1 'Tahoma';
+	font-size: 2vw;
+    text-align: center;
+}
+
+.share-notifications p {
+	position: absolute;
+	bottom: 107.575757576%;
+	left: 0;
+	width: 30%;
+	background: #FFA000;
+	border: 3px solid #FAEEBC;
+	border-radius: 15px;
+	margin: 0 10%;
+	padding: 7.14285714286% 0;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.share-notifications p + p {
+	left: auto;
+	right: 0;
+	background: #f33b0f;
+} 
+
+.share-notifications span {
+	display: block;
+}
+
+.share-notifications span:last-child {
+	font-size: 100%;
+}
